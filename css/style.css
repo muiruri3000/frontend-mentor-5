@@ -1,0 +1,123 @@
+:root{
+--Darkcyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+
+--Verydarkblue: hsl(212, 21%, 14%);
+--Darkgrayishblue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%)
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image img{
+    width: 30em;
+    border-radius: 1em 0  0 1em;
+}
+
+
+main{
+
+   height: 100vh;
+  
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+background-color: var(--White);
+border-radius: 2em;
+    display: flex;
+    max-width: 65rem;
+   
+}
+
+.content{
+    display: flex;
+    
+    flex-direction: column;
+    padding: 0 4em 0 2em;
+}
+h1{
+    margin: 1em 0 1em 0;
+    font-family: 'montserrat';
+    font-weight: 200;
+    font-size: 1.6em;
+    
+}
+
+.gaby{
+    font-size: 4em;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.desc{
+    font-size: 1.5em;
+    font-family: 'montserrat';
+    font-weight: 200;
+    padding-bottom:1em;
+}
+
+.price{
+    display: flex;
+    align-content: center;
+}
+
+.price .bolder{
+    font-size: 3.3em;
+    font-weight: 900;
+    margin-right: .5em;
+    color: var(--Darkcyan);
+}
+
+.price .feint{
+    font-size: 1.3em;
+    align-self: center;
+    font-weight: 900;
+    text-decoration:line-through ;
+    font-family: fraunces;
+    font-weight: 200;
+}
+button{
+    margin-top:1rem;
+    padding: 1.5em;
+    border-radius: 1em;
+    background-color: var(--Darkcyan);
+    color: white;
+    font-size: 100%;
+}
+
+@media(max-width:1400px){
+    .card{
+        flex-direction: column;
+        width: 100%;
+      
+    }
+ 
+    .image img{
+        width: 100%;
+        border-radius: 0;
+    }
+    .gaby{
+        font-size: 2.3em;
+        padding-bottom: 1em;
+        font-weight: 900;
+    }
+    button{
+        margin-bottom: 2em;
+    }
+    .price{
+        font-size: 1.5em;
+    }
+    button{
+        font-size: 1.6em;
+        
+    }
+
+}
