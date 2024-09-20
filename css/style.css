@@ -94,6 +94,10 @@ button{
 }
 
 @media(max-width:1400px){
+
+    .main{
+        max-width:50em;
+        padding:3em;
     .card{
         flex-direction: column;
         width: 100%;
