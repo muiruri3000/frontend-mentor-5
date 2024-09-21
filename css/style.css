@@ -115,6 +115,10 @@ button:hover{
         
       
     }
+    .card .image img{
+        border-radius: 0;
+    }
+    
   
 }
 /* }
